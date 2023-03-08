@@ -1,3 +1,139 @@
 body{
     background-color: #131313;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    width: 33%;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 20px;
+}
+#menu > a {
+    text-decoration: none;
+    color: #ffff;
+    margin-right: 15px;
+    transition: all .2s ease-in-out;
+}
+#menu > a:hover{
+    transform: scale(1.1);
+}
+.logo{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Playfair Display';
+}
+.pl{
+    font-size: 45px;
+    font-weight: 500;
+}
+.compagny{
+    font-size: 25px;
+    font-weight:400;
+}
+.pictoBox{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.pictoBox > img {
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.pictoBox > img:hover{
+    transform: scale(1.1);
+}
+.catchPhrase{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 55px;
+    font-family: 'Roboto';
+    font-size: 95px;
+    font-weight: 700;
+}
+.catchPhrase > p{
+    margin: 0;
+}
+.newCollection{
+    color: #ffff;
+}
+.fadeInRight{
+animation:fadeInRight 1s ease backwards;
+}
+.metropolisSeries{
+    color: black;
+    -webkit-text-stroke: 2px #ffff;
+}
+.fadeInLeft{
+    animation:fadeInRight 1s ease backwards;
+    animation-delay:1s;
+}
+.PictureGalerie{
+    display: flex;
+    justify-content: space-between;
+}
+.fadeInUp{
+    animation:fadeInUp 1s ease backwards;
+    animation-delay:2s;
+}
+.one{
+    animation-delay:1.5s;
+}
+.two{
+    animation-delay:2.5s;
+}
+.three{
+    animation-delay:2s;
+}
+@keyframes fadeInUp{
+    0%{transform:translate(0px, 100px); opacity: 0;}
+    100%{transform:translate(0px, 0); opacity: 1;}
+}
+@keyframes fadeInRight{
+    0% {
+       opacity: 0;
+       transform: translateX(50px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+} 
+@keyframes fadeInLeft{
+    0% {
+       opacity: 0;
+       transform: translateX(-50px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+}   
+@media (min-width:1440px) {
+    body{
+        overflow-y: unset ;
+    }
+
 }
